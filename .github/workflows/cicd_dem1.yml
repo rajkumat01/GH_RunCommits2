@@ -90,11 +90,16 @@ jobs:
           artifacts: ' [{"name": "com:autoclaim","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
           package-name: 'autoclaim.war'
       
+    
   deploy:
     needs: integrationTest
     name: Deploy
     runs-on: ubuntu-latest
-    steps:     
+    steps:   
+      - name: Sleep 30 sec
+        run: sleep 30s
+        shell: bash
+     
       - name: Custom Change
         uses: ServiceNow/servicenow-devops-change@dev2
         with:
