@@ -96,8 +96,8 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:   
-      - name: Sleep 30 sec
-        run: sleep 30s
+      - name: Sleep 1900 sec
+        run: sleep 1900s
         shell: bash
      
       - name: Custom Change
