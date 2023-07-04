@@ -97,7 +97,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:   
       - name: Sleep 1900 sec
-        run: sleep 1000s
+        run: sleep 100s
         shell: bash
      
       - name: Custom Change
