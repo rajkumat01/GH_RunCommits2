@@ -1,7 +1,8 @@
 name: cicd_demo
 
-on:
-  workflow_dispatch:
+# on:
+#   workflow_dispatch:
+on: push
 
 jobs:
   build:
